@@ -1,7 +1,7 @@
 {
   "name": "deAuctions",
   "version": "0.1.0",
-  "description": "template ",
+  "description": "template to build smart contract with hardhat & typescript",
   "repository": "github.com/donBarbos/hardhat-template",
   "license": "MIT",
   "author": "donBarbos <donbarbos@proton.me>",
@@ -36,7 +36,7 @@
     "@ethersproject/providers": "^5.4.7",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
-    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
     "@nomiclabs/hardhat-ethers": "^2.1.1",
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "@nomiclabs/hardhat-solhint": "^2.0.1",
