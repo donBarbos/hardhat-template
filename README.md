@@ -1,4 +1,4 @@
-# Template on Solidity
+# Hardhat Template using Typescript & Hardhat
 
 [![Lint Status](https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml/badge.svg)](https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml)
 [![Tests Status](https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml/badge.svg)](https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml)
@@ -29,6 +29,24 @@
    yarn deploy
    yarn verify --network $NETWORK "0x0000000000000000000000000000000000000000"  # 0x00... is contract address
    ```
+
+### Commands
+
+- `yarn compile` - compile smart contract
+- `yarn deploy --network $NETWORK_NAME` - deploy to `$NETWORK_NAME` your contract
+- `yarn virefy --network $NETWORK_NAME` - verify code of your contract on `$NETWORK_NAME` using block explorer API key
+- `yarn accounts --network $NETWORK_NAME` - you can see all available addresses to use
+- `yarn size` - show size of contracts
+- `yarn typechain` - generate types for your smart contract
+- `yarn test` - run tests
+- `yarn prepare` - husky install
+- `yarn lint` - run all lints
+- `yarn clean` - remove generated folders
+
+### Github Actions
+
+Note though that to make this work, you must use your PRIVATE_KEY from wallet as GitHub secrets.\
+Tip: use the secret key of an unnecessary wallet
 
 ## 👷 Contributing
 
