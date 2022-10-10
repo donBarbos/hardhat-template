@@ -1,0 +1,33 @@
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.sol",
+      "options": {
+        "compiler": "0.8.15",
+        "printWidth": 100,
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": false,
+        "bracketSpacing": false,
+        "explicitTypes": "preserve"
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "importOrder": ["<THIRD_PARTY_MODULES>", "^[./]"],
+        "importOrderParserPlugins": ["typescript"],
+        "importOrderSeparation": true,
+        "importOrderSortSpecifiers": true
+      }
+    }
+
+  ]
+}
