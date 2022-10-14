@@ -40,7 +40,7 @@
     }
   },
   "lint-staged": {
-    "*.{sol}": [
+    "*.sol": [
       "yarn lint:sol",
       "git add"
     ],
