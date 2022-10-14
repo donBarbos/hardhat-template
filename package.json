@@ -41,16 +41,13 @@
   },
   "lint-staged": {
     "*.sol": [
-      "yarn lint:sol",
-      "git add"
+      "yarn lint:sol"
     ],
     "*.{js,ts}": [
-      "yarn lint:ts:fix",
-      "git add"
+      "yarn lint:ts:fix"
     ],
     "{*.{json,md}}": [
-      "prettier --config ./.prettierrc --write",
-      "git add"
+      "prettier --config ./.prettierrc --write"
     ]
   },
   "devDependencies": {
