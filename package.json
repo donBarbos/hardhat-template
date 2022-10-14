@@ -27,9 +27,31 @@
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 5 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts .",
+    "lint:ts:fix": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts . --fix",
     "prettier": "prettier --config ./.prettierrc --write \"**/**/*.{js,json,md,sol,ts,yml}\"",
     "prettier:check": "prettier --check --config ./.prettierrc \"**/*.{js,json,md,sol,ts,yml}\"",
     "clean": "rimraf ./artifacts ./contracts/artifacts ./contracts/interfaces/artifacts ./cache ./coverage ./typechain-types ./coverage.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "yarn lint-staged"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{sol}": [
+      "yarn lint:sol",
+      "git add"
+    ],
+    "*.{js,ts}": [
+      "yarn lint:ts:fix",
+      "git add"
+    ],
+    "{*.{json,md}}": [
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
