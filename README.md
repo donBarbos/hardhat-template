@@ -1,9 +1,13 @@
-# Hardhat Template using Typescript & Hardhat
+<h1 align="center">
+  Hardhat template for Solidity using Typescript & Hardhat
+</h1>
 
-[![Lint Status](https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml/badge.svg)](https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml)
-[![Tests Status](https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml/badge.svg)](https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml)
-[![Build Status](https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml/badge.svg)](https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/donBarbos/hardhat-template/blob/main/LICENSE)
+<p align="center">
+  <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml"><img alt="Lint Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml/badge.svg"></a>
+  <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml"><img alt="Tests Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml/badge.svg"></a>
+  <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml"><img alt="Build Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml/badge.svg"></a>
+  <a href="https://github.com/donBarbos/hardhat-template/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+</p>
 
 ## 🚀 Getting Started
 
