@@ -6,6 +6,7 @@
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml"><img alt="Lint Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml/badge.svg"></a>
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml"><img alt="Tests Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml/badge.svg"></a>
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml"><img alt="Build Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml/badge.svg"></a>
+  <a href="http://commitizen.github.io/cz-cli/"><img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg"></a>
   <a href="https://github.com/donBarbos/hardhat-template/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 

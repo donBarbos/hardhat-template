@@ -24,6 +24,7 @@
     "test": "hardhat test --network hardhat",
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"test/**/*.ts\" && yarn typechain",
     "prepare": "husky install",
+    "commit": "cz",
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 5 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts .",
@@ -34,9 +35,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": [
-        "yarn lint-staged"
-      ]
+      "pre-commit": "yarn lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && yarn cz --hook || true"
     }
   },
   "lint-staged": {
@@ -70,6 +70,8 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "chai": "^4.2.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "3.3.0",
     "dotenv": "^16.0.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
@@ -85,6 +87,7 @@
     "prettier": "^2.7.1",
     "prettier-plugin-solidity": "^1.0.0-beta.24",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
     "solhint": "^3.3.7",
     "solidity-coverage": "^0.7.21",
     "ts-node": ">=8.0.0",
@@ -97,5 +100,10 @@
   "packageManager": "yarn@3.2.1",
   "publishConfig": {
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
