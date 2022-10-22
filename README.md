@@ -1,5 +1,5 @@
 <h1 align="center">
-  Hardhat template for Solidity using Typescript
+  <em>Hardhat template for Solidity using Typescript</em>
 </h1>
 
 <p align="center">
