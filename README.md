@@ -14,12 +14,6 @@
 
 > Click the [Use this template](https://github.com/donBarbos/hardhat-template/generate) button at the top of the page to create a new repository with this repo as the initial state.
 
-0. Setup Husky to format code on commit
-
-   ```shell
-   yarn prepare
-   ```
-
 1. Install dependencies
 
    ```shell
