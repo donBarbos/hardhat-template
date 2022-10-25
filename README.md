@@ -14,6 +14,8 @@
 
 > Click the [Use this template](https://github.com/donBarbos/hardhat-template/generate) button at the top of the page to create a new repository with this repo as the initial state.
 
+### How to use
+
 1. Install dependencies
 
    ```shell
@@ -31,16 +33,23 @@
 
 ### Commands
 
-- `yarn compile` - compile smart contract
-- `yarn deploy --network $NETWORK_NAME` - deploy to `$NETWORK_NAME` your contract
-- `yarn virefy --network $NETWORK_NAME` - verify code of your contract on `$NETWORK_NAME` using block explorer API key
-- `yarn accounts --network $NETWORK_NAME` - you can see all available addresses to use
-- `yarn size` - show size of contracts
-- `yarn typechain` - generate types for your smart contract
-- `yarn test` - run tests
-- `yarn prepare` - husky install
-- `yarn lint` - run all lints
-- `yarn clean` - remove generated folders
+* `yarn compile` — compile smart contract
+* `yarn deploy --network $NETWORK_NAME` — deploy to `$NETWORK_NAME` your contract
+* `yarn virefy --network $NETWORK_NAME` — verify code of your contract on `$NETWORK_NAME` using block explorer API key
+* `yarn accounts --network $NETWORK_NAME` — you can see all available addresses to use
+* `yarn size` — show size of contracts
+* `yarn typechain` — generate types for your smart contract
+* `yarn test` — run tests
+* `yarn prepare` — husky install
+* `yarn lint` — run all lints
+* `yarn clean` — remove generated folders
+
+### Git hooks
+
+* [`post-merge`](./husky/post-merge) — runs `yarn install` after `git pull`
+* [`pre-commit`](./husky/pre-commit) — runs `yarn lint-staged` (formats staged files) before `git commit`
+* [`prepare-commit-msg`](./husky/prepare-commit-msg) — runs `git-cz` (message by Conventional Commits) during `git commit`
+* [`pre-push`](./husky/pre-push) — runs `yarn test` before `git push`
 
 ### Github Actions
 
@@ -61,7 +70,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## 📝 License
 
-Distributed under the MIT license. See `LICENSE` for more information.
+Distributed under the MIT license. See [`LICENSE`](./LICENSE) for more information.
 
 ## 📢 Contact
 
