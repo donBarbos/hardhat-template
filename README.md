@@ -46,10 +46,10 @@
 
 ### Git hooks
 
-* [`post-merge`](./husky/post-merge) — runs `yarn install` after `git pull`
-* [`pre-commit`](./husky/pre-commit) — runs `yarn lint-staged` (formats staged files) before `git commit`
-* [`prepare-commit-msg`](./husky/prepare-commit-msg) — runs `git-cz` (message by Conventional Commits) during `git commit`
-* [`pre-push`](./husky/pre-push) — runs `yarn test` before `git push`
+* [`post-merge`](./.husky/post-merge) — runs `yarn install` after `git pull`
+* [`pre-commit`](./.husky/pre-commit) — runs `yarn lint-staged` (formats staged files) before `git commit`
+* [`prepare-commit-msg`](./.husky/prepare-commit-msg) — runs `git-cz` (message by Conventional Commits) during `git commit`
+* [`pre-push`](./.husky/pre-push) — runs `yarn test` before `git push`
 
 ### Github Actions
 
