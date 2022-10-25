@@ -33,12 +33,6 @@
     "prettier:check": "prettier --check --config ./.prettierrc \"**/*.{js,json,md,sol,ts,yml}\"",
     "clean": "rimraf ./artifacts ./contracts/artifacts ./contracts/interfaces/artifacts ./cache ./coverage ./typechain-types ./coverage.json"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && yarn cz --hook || true"
-    }
-  },
   "lint-staged": {
     "*.sol": [
       "yarn lint:sol"
