@@ -26,6 +26,7 @@
     "prepare": "husky install",
     "commit": "cz",
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
+    "lint:fix": "yarn lint:sol && yarn lint:ts:fix && yarn prettier",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 5 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts .",
     "lint:ts:fix": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts . --fix",
@@ -35,12 +36,14 @@
   },
   "lint-staged": {
     "*.sol": [
+      "prettier --config ./.prettierrc --write",
       "yarn lint:sol"
     ],
     "*.{js,ts}": [
+      "prettier --config ./.prettierrc --write",
       "yarn lint:ts:fix"
     ],
-    "{*.{json,md}}": [
+    "{*.{json,md,yml}}": [
       "prettier --config ./.prettierrc --write"
     ]
   },
