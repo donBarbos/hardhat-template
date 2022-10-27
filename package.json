@@ -29,9 +29,9 @@
     "lint:fix": "yarn lint:sol && yarn lint:ts:fix && yarn prettier",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 5 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts .",
-    "lint:ts:fix": "eslint --config ./.eslintrc --ignore-path ./.eslintignore --ext .js,.ts . --fix",
+    "lint:ts:fix": "yarn lint:ts --fix",
     "prettier": "prettier --config ./.prettierrc --write \"**/**/*.{js,json,md,sol,ts,yml}\"",
-    "prettier:check": "prettier --check --config ./.prettierrc \"**/*.{js,json,md,sol,ts,yml}\"",
+    "prettier:check": "yarn prettier --check",
     "clean": "rimraf ./artifacts ./contracts/artifacts ./contracts/interfaces/artifacts ./cache ./coverage ./typechain-types ./coverage.json"
   },
   "lint-staged": {
