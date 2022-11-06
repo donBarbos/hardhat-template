@@ -30,3 +30,15 @@ jobs:
           yarn test
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
+      - name: Collect coverage
+        run: |
+          yarn coverage
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
+      - name: Publish coverage
+        uses: codecov/codecov-action@v3
+        with:
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
