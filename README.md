@@ -3,6 +3,7 @@
 </h1>
 
 <p align="center">
+  <a href="https://codecov.io/gh/donBarbos/hardhat-template" ><img alt="Coverage Status" src="https://codecov.io/gh/donBarbos/hardhat-template/branch/main/graph/badge.svg?token=0O5750DY6J"/></a>
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml"><img alt="Lint Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/lint.yml/badge.svg"></a>
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml"><img alt="Tests Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/tests.yml/badge.svg"></a>
   <a href="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml"><img alt="Build Status" src="https://github.com/donBarbos/hardhat-template/actions/workflows/build.yml/badge.svg"></a>
