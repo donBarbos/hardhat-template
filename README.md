@@ -71,7 +71,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## 📝 License
 
-Distributed under the MIT license. See [`LICENSE`](./LICENSE) for more information.
+Distributed under the AGPL-3.0 license. See [`LICENSE`](./LICENSE) for more information.
 
 ## 📢 Contact
 
